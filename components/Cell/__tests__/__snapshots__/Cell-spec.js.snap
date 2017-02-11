@@ -1,0 +1,14 @@
+exports[`Cell cell renders correctly 1`] = `
+<div
+  className="cell col6"
+  style={
+    Object {
+      "alignSelf": "center",
+      "width": "50%",
+    }
+  }>
+  <div>
+    One
+  </div>
+</div>
+`;

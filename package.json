@@ -1,0 +1,39 @@
+{
+  "name": "cellulose",
+  "version": "0.1.0",
+  "description": "Layout engine for react componenets based on context aware css",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "bmatto@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "ramda": "^0.23.0",
+    "react": "^15.4.2",
+    "react-css-themr": "^2.0.0",
+    "react-dom": "^15.4.2",
+    "react-measure": "^1.4.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-react-app": "^2.1.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "enzyme": "^2.7.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^18.1.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-test-renderer": "^15.4.2"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.s?css$": "<rootDir>/config/styleProxy.js"
+    }
+  }
+}
