@@ -7,7 +7,3 @@
 Cellulose is a react layout library based on contextually aware components using flexbox.
 
 [//]: # (`npm i -S cellulose` or `yarn add cellulose`)
-
-## CSS Modules / Themr
-
-Cellulose wraps components using [React CSS Themr](https://github.com/javivelasco/react-css-themr) and uses css modules for styling.  This coupled with "breakpoint" configuration classes allows for targeting nested component styles within the applied configuration class.
