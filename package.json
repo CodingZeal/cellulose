@@ -25,7 +25,10 @@
     "cellulose"
   ],
   "author": "Zeal",
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": ">0.14.0",
+    "react-dom": ">0.14.0"
+  },
   "dependencies": {
     "classnames": "^2.2.5",
     "ramda": "^0.23.0",
