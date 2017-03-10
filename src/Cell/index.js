@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react'
-import { themr } from 'react-css-themr'
 import {
   defaultTo,
   F,
@@ -12,10 +11,13 @@ import {
   when
 } from 'ramda'
 import classnames from 'classnames'
+import styled from 'styled-components'
 
-import cellTheme from './theme.scss'
-
-export class Cell extends PureComponent {
+const StyledCell = styled.div`
+  box-sizing: border-box;
+  flex: 0 0 auto;
+`
+export default class Cell extends PureComponent {
   flexProperties = [
     'alignSelf',
     'flexBasis',
@@ -26,7 +28,7 @@ export class Cell extends PureComponent {
   ]
 
   render() {
-    const { theme, breakPoint, children, columns } = this.props
+    const { breakPoint, children, columns } = this.props
     const spanOptions = over(
       lensProp('0'),
       defaultTo(columns),
@@ -37,17 +39,15 @@ export class Cell extends PureComponent {
     const className = ifElse(is(Object), prop('className'), F)(span)
     const flexStyles = pick(this.flexProperties)(this.props)
     const width = `${cols / columns * 100}%`
+
     const cellClassName = classnames(
-      theme.cell,
       { [className]: className }
     )
 
     return (
-      <div style={{ ...flexStyles, width }} className={cellClassName}>
+      <StyledCell style={{ ...flexStyles, width }} className={cellClassName}>
         {children}
-      </div>
+      </StyledCell>
     )
   }
 }
-
-export default themr('', cellTheme)(Cell)

@@ -3,36 +3,29 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { has } from 'ramda'
 
-import { Cellulose } from '../'
-import { Cell } from '../../Cell'
-
-import theme from '../theme.scss'
+import Cellulose from '../'
+import Cell from '../../Cell'
 
 describe('Cellulose', () => {
-  const breakPoints = { 768: 'point768', 1024: { className: 'point1024' } }
+  const breakPoints = {
+    768: 'point768',
+    1024: { className: 'point1024' }
+  }
 
   const wrapper = mount(
-    <Cellulose columns={12} theme={theme} breakPoints={breakPoints}>
-      <Cell
-          theme={theme}
-          spanOptions={{ 768: { cols: 6, className: 'col4', 1024: 8 } }}>
+    <Cellulose columns={12} breakPoints={breakPoints}>
+      <Cell spanOptions={{ 768: { cols: 6, className: 'col4' }, 1024: 8 }}>
         <div>One</div>
       </Cell>
-      <Cell
-          theme={theme}
-          spanOptions={{ 768: 6, 1024: 4 }}>
+      <Cell spanOptions={{ 768: 6, 1024: 4 }}>
         <div>Two</div>
       </Cell>
     </Cellulose>
   )
   const instance = wrapper.instance()
 
-  test('it renders a div with the cellulose class', () => {
-    expect(wrapper.find('div.cellulose').length).toBe(1)
-  })
-
   test('it passes breakPoint and columns to Cell', () => {
-    const gridItems = wrapper.find('Cell')
+    const gridItems = wrapper.find(Cell)
 
     expect(has('breakPoint')(gridItems.first().props())).toBe(true)
     expect(has('columns')(gridItems.first().props())).toBe(true)

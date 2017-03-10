@@ -1,6 +1,6 @@
 exports[`Cell cell renders correctly 1`] = `
 <div
-  className="cell col6"
+  className="col6 kYySsF"
   style={
     Object {
       "alignSelf": "center",

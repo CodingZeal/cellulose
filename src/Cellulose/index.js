@@ -14,12 +14,16 @@ import {
   sort,
   when
 } from 'ramda'
-import { themr } from 'react-css-themr'
 import classnames from 'classnames'
+import styled from 'styled-components'
 
-import celluloseTheme from './theme.scss'
+const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`
 
-export class Cellulose extends PureComponent {
+export default class Cellulose extends PureComponent {
   flexProperties = [
     'alignContent',
     'alignItems',
@@ -41,7 +45,7 @@ export class Cellulose extends PureComponent {
   )(breakPoints)
 
   render() {
-    const { children, theme, columns } = this.props
+    const { children, columns } = this.props
     const flexStyles = pick(this.flexProperties)(this.props)
     const breakPoints = over(
       lensProp('0'),
@@ -56,24 +60,21 @@ export class Cellulose extends PureComponent {
           const breakPointClass = this.breakPointClass(breakPoint, breakPoints)
 
           const className = classnames(
-            theme.cellulose,
             { [breakPointClass]: breakPointClass }
           )
 
           return (
-            <div style={flexStyles} className={className}>
+            <Wrapper style={flexStyles} className={className}>
               {React.Children.map(
                 children,
                 child => React.cloneElement(
                   child, { ...child.props, breakPoint, columns }
                 )
               )}
-            </div>
+            </Wrapper>
           )
         }}
       </Measure>
     )
   }
 }
-
-export default themr('', celluloseTheme)(Cellulose)
