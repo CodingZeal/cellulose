@@ -1,6 +1,6 @@
 {
   "name": "cellulose",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "description": "Layout engine for react componenets based on context aware css",
   "main": "./lib",
   "license": "MIT",
@@ -12,10 +12,17 @@
     "prebuild": "rimraf lib",
     "prepublish": "yarn test && yarn prebuild && yarn build"
   },
-  "respository": {
+  "repository": {
     "type": "git",
-    "url": "https://github.com/CodginZeal/cellulose.git"
+    "url": "https://github.com/CodingZeal/cellulose.git"
   },
+  "files": [
+    "lib"
+  ],
+  "bugs": {
+    "url": "https://github.com/CodingZeal/cellulose/issues"
+  },
+  "homepage": "https://github.com/CodingZeal/cellulose/issues",
   "keywords": [
     "react",
     "layout",
