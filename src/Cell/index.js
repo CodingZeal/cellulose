@@ -13,7 +13,7 @@ import {
 import classnames from 'classnames'
 import styled from 'styled-components'
 
-const StyledCell = styled.div`
+const CellWrapper = styled.div`
   box-sizing: border-box;
   flex: 0 0 auto;
 `
@@ -44,8 +44,8 @@ export default function Cell(props) {
   )
 
   return (
-    <StyledCell style={{ ...flexStyles, width }} className={cellClassName}>
+    <CellWrapper style={{ ...flexStyles, width }} className={cellClassName}>
       {children}
-    </StyledCell>
+    </CellWrapper>
   )
 }

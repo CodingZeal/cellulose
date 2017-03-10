@@ -17,7 +17,7 @@ import {
 import classnames from 'classnames'
 import styled from 'styled-components'
 
-const Wrapper = styled.div`
+const CelluloseWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -64,14 +64,14 @@ export default class Cellulose extends PureComponent {
           )
 
           return (
-            <Wrapper style={flexStyles} className={className}>
+            <CelluloseWrapper style={flexStyles} className={className}>
               {React.Children.map(
                 children,
                 child => React.cloneElement(
                   child, { ...child.props, breakPoint, columns }
                 )
               )}
-            </Wrapper>
+            </CelluloseWrapper>
           )
         }}
       </Measure>
