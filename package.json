@@ -1,6 +1,6 @@
 {
   "name": "cellulose",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Layout engine for react componenets based on context aware css",
   "main": "./lib",
   "license": "MIT",
