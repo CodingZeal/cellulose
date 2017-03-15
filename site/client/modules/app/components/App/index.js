@@ -1,5 +1,5 @@
 import React from 'react'
-import { Match, Miss } from 'react-router'
+import { Route, Switch } from 'react-router-dom'
 
 import styles from './styles.scss'
 import logo from './logo.png'
@@ -12,8 +12,10 @@ export default function App({ store }) {
         <h2>Welcome!</h2>
       </div>
 
-      <Match exactly pattern='/' component={Home} />
-      <Miss component={NotFound} />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route component={NotFound} />
+      </Switch>
     </div>
   )
 }
