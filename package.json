@@ -6,11 +6,11 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "test:watch": "yarn test -- --watch",
+    "test:watch": "npm test -- --watch",
     "babel": "babel ./src -d lib",
-    "build": "NODE_ENV=production yarn babel",
+    "build": "NODE_ENV=production npm run babel",
     "prebuild": "rimraf lib",
-    "prepublish": "yarn test && yarn prebuild && yarn build"
+    "prepublish": "npm test && npm run prebuild && npm run build"
   },
   "repository": {
     "type": "git",
