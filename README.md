@@ -6,7 +6,7 @@
 
 Cellulose is a React layout library based on contextually aware components using flexbox.
 
-[//]: # (`npm i -S cellulose` or `yarn add cellulose`)
+`npm i -S cellulose` or `yarn add cellulose`
 
 ## Usage
 
