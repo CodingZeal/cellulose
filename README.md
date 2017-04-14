@@ -36,7 +36,7 @@ export function MyComponent() {
 }
 ```
 
-Cellulose can also be used to create a responsive grid. Use the prop `columns=` of `<Cellulose>` to define a quantity of columns, then add `<Cell>` components with `spanOptions` props that define responsive behavior
+Cellulose can also be used to create a responsive grid. Use the prop `columns=` of `<Cellulose>` to define the number of columns to use, then add `<Cell>` components with `spanOptions` props that define responsive behavior
 
 ```
 import { Cellulose, Cell } from 'cellulose'
