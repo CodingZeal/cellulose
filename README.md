@@ -4,18 +4,39 @@
 
 # Cellulose
 
-Cellulose is a React layout library based on contextually aware components using flexbox.
+Cellulose is a React layout library that allows you to create contextually aware components using flexbox.
+
+The `<Cellulose>` component uses its own rendered width to assign style and responsive behavior, rather than the width of the browser window.
+
+## Installation
 
 `npm i -S cellulose` or `yarn add cellulose`
 
 ## Usage
 
-Cellulose offers a responsive-style grid system
+Use the `<Cellulose>` component to define a container that you want to style based on internal width.
+
+`<Cellulose>` will render into the DOM as a `<div>` whose class is determined by which breakPoint in `breakPoints` its own width exceeds.
 
 ```
 const breakPoints = {
-  768:  'point768',
-  1024: 'point1024'
+  768:  'greater-than-768',
+  1024: 'greater-than-1024'
+}
+
+return (
+  <Cellulose breakPoints={breakPoints}>
+    <div>Content</div>
+  </Cellulose>
+)
+```
+
+Cellulose can also be used to create a responsive grid. Use the prop `columns=` of `<Cellulose>` to define a quantity of columns, then add `<Cell>` components with `spanOptions` props that define responsive behavior
+
+```
+const breakPoints = {
+  768:  'greater-than-768',
+  1024: 'greater-than-1024'
 }
 
 return (
@@ -30,25 +51,29 @@ return (
 )
 ```
 
-With Cellulose, changing styles responsively based on breakpoints is simple
+Cellulose's `<Cell>` components can even configure their own classes based on which `breakPoints` are activated!
 
 ```
 const breakPoints = {
-  768:  'point768',
-  1024: 'point1024'
+  768:  'greater-than-768',
+  1024: 'greater-than-1024'
 }
 
 return (
   <Cellulose columns={12} breakPoints={breakPoints}>
     <Cell
         spanOptions={{
-          768: { cols: 6, className: 'tabletCell' },
-          1024: { cols: 8, className: 'desktopCell' }
+          768: { cols: 1, className: 'tabletMenu' },
+          1024: { cols: 2, className: 'desktopMenu' }
         }}>
-      One
+      <div>Menu-ish Stuff</div>
     </Cell>
-    <Cell spanOptions={{ 768: 6, 1024: 4 }}>
-      <div>Two</div>
+    <Cell
+        spanOptions={{
+          768: { cols: 11, className: 'tabletContent' },
+          1024: { cols: 10, className: 'desktopContent' }
+        }}>
+      <div>Body Content</div>
     </Cell>
   </Cellulose>
 )
