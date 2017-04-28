@@ -93,3 +93,22 @@ export function MyComponent() {
   )
 }
 ```
+
+## Cellulose Props
+
+Prop | Type | Usage
+-----|------|------
+columns | Number | # of columns for Cellulose's internal grid
+breakPoints | Object Number:String | Key: The minimum pixels for this breakpoint. Value: The class to assign to the component while this breakpoint is active
+
+## Cell props
+
+Prop | Type | Usage
+-----|------|------
+spanOptions | Object Number:Number or Number:Object | Key: should be a key from Cellulose breakPoints prop keys. Value: If Number, the number of columns this Cell should consume at this breakpoint. If object, see `spanOptions props` heading below for possible props
+
+## spanOptions props
+Prop | Type | Usage
+-----|------|------
+cols | Number | the number of columns this Cell should consume at this breakpoint
+className | String | class to apply to Cell when this breakpoint is active
