@@ -406,6 +406,9 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
     text-align: center;
 
   }
+  .sections-code-bg.usage-section{
+    margin-top: 40px;
+  }
   .html-embed-2 {
     font-size: 10px;
   }

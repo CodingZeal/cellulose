@@ -164,55 +164,55 @@ yarn add cellulose
             <p class="getting-started-type">Cellulose can also be used to create a responsive grid. Use the columns property of&nbsp;&nbsp;<span class="div-containers">&lt;</span><span class="cellulose">Cellulose</span><span class="div-containers">&gt;</span> to define the number of columns to use, then add <span class="div-containers">&lt;</span><span class="cellulose">Cell</span><span class="div-containers">&gt;</span> components with spanOptions props that define responsive behavior</p>
           </div>
           <div class="w-col w-col-6">
-            <div class="sections-code-bg w-hidden-small w-hidden-tiny" data-ix="installation-scroll-animation">
-              <div class="html-embed-2 w-embed"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">import</span> <span style="color: #f8f8f2">{</span> <span style="color: #a6e22e">Cellulose</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">Cell</span> <span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;cellulose&#39;</span>
-<span style="color: #66d9ef">import</span> <span style="color: #a6e22e">React</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;react&#39;</span>
+          <div class="sections-code-bg w-hidden-small w-hidden-tiny" data-ix="installation-scroll-animation">
+          
+        <span style="color: #66d9ef">import</span> <span style="color: #a6e22e">React</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;react&#39;</span>
 <span style="color: #66d9ef">export</span> <span style="color: #66d9ef">function</span> <span style="color: #a6e22e">MyComponent</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #66d9ef">const</span> <span style="color: #a6e22e">breakPoints</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span>  <span style="color: #e6db74">&#39;greater-than-768&#39;</span><span style="color: #f8f8f2">,</span>
-    <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;greater-than-1024&#39;</span>
-  <span style="color: #f8f8f2">}</span>
-  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">(</span>
-    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cellulose</span> <span style="color: #a6e22e">columns</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #ae81ff">12</span><span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">breakPoints</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #a6e22e">breakPoints</span><span style="color: #f8f8f2">}</span><span style="color: #f92672">&gt;</span>
-      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">8</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">One<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
-      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
-      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">Two<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
-      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
-    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cellulose<span style="color: #f92672">&gt;</span></span>
-  <span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">const</span> <span style="color: #a6e22e">breakPoints</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span>  <span style="color: #e6db74">&#39;greater-than-768&#39;</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;greater-than-1024&#39;</span>
 <span style="color: #f8f8f2">}</span>
-</span></span></pre>
-              </div>
-            </div>
-          </div>
-          <div class="sections-code-bg w-hidden-main w-hidden-medium">
-            <div class="html-embed-2 w-embed"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">import</span> <span style="color: #f8f8f2">{</span> <span style="color: #a6e22e">Cellulose</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">Cell</span> <span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;cellulose&#39;</span>
-<span style="color: #66d9ef">import</span> <span style="color: #a6e22e">React</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;react&#39;</span>
-<span style="color: #66d9ef">export</span> <span style="color: #66d9ef">function</span> <span style="color: #a6e22e">MyComponent</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
-  <span style="color: #66d9ef">const</span> <span style="color: #a6e22e">breakPoints</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span>  <span style="color: #e6db74">&#39;greater-than-768&#39;</span><span style="color: #f8f8f2">,</span>
-    <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;greater-than-1024&#39;</span>
-  <span style="color: #f8f8f2">}</span>
-  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">(</span>
-    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cellulose</span> <span style="color: #a6e22e">columns</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #ae81ff">12</span><span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">breakPoints</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #a6e22e">breakPoints</span><span style="color: #f8f8f2">}</span><span style="color: #f92672">&gt;</span>
-      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">8</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">One<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
-      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
-      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
-        <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">Two<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
-      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
-    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cellulose<span style="color: #f92672">&gt;</span></span>
-  <span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">(</span>
+  <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cellulose</span> <span style="color: #a6e22e">columns</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #ae81ff">12</span><span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">breakPoints</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #a6e22e">breakPoints</span><span style="color: #f8f8f2">}</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">8</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">One<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">Two<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
+  <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cellulose<span style="color: #f92672">&gt;</span></span>
+<span style="color: #f8f8f2">)</span>
 <span style="color: #f8f8f2">}</span>
 </span></span></pre>
             </div>
           </div>
         </div>
+          <div class="sections-code-bg w-hidden-main w-hidden-medium">
+          <div class="html-embed-2 w-embed"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">import</span> <span style="color: #f8f8f2">{</span> <span style="color: #a6e22e">Cellulose</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">Cell</span> <span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;cellulose&#39;</span>
+<span style="color: #66d9ef">import</span> <span style="color: #a6e22e">React</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;react&#39;</span>
+<span style="color: #66d9ef">export</span> <span style="color: #66d9ef">function</span> <span style="color: #a6e22e">MyComponent</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+<span style="color: #66d9ef">const</span> <span style="color: #a6e22e">breakPoints</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span>  <span style="color: #e6db74">&#39;greater-than-768&#39;</span><span style="color: #f8f8f2">,</span>
+  <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;greater-than-1024&#39;</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">(</span>
+  <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cellulose</span> <span style="color: #a6e22e">columns</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #ae81ff">12</span><span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">breakPoints</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #a6e22e">breakPoints</span><span style="color: #f8f8f2">}</span><span style="color: #f92672">&gt;</span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">8</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">One<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">Two<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
+  <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cellulose<span style="color: #f92672">&gt;</span></span>
+<span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">}</span>
+</span></span></pre>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</div>
   <div class="footer-section">
     <div class="w-container">
       <div class="footer-type">Full documentation available at: <a target="_blank" href="https://github.com/CodingZeal/cellulose" class="link">https://github.com/CodingZeal/cellulose/</a>
