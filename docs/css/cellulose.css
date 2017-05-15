@@ -351,14 +351,23 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
   }
   .hero-sub-heading {
     width: 90%;
+    font-size: 30px;
+    line-height: 35px;
   }
   .heading-3 {
     text-align: center;
   }
   .getting-started-type {
-    text-align: center;
+    font-size: 13px;
+    text-align: left;
   }
   .installation-section-type {
     text-align: center;
+  }
+  .html-embed {
+    font-size: 11px;
+  }
+  .html-embed-2 {
+    font-size: 10px;
   }
 }
