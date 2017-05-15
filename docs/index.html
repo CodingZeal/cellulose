@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Mon May 15 2017 16:42:21 GMT+0000 (UTC)  -->
+<!--  Last Published: Mon May 15 2017 19:23:42 GMT+0000 (UTC)  -->
 <html data-wf-page="58ed0e204801da213d7c6923" data-wf-site="58ed0e204801da213d7c6922">
 <head>
   <meta charset="utf-8">
@@ -23,7 +23,7 @@
 <body>
   <div class="nav-bar w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-ix="nav-bar-on-load-animation">
     <div class="w-container">
-      <a class="w-nav-brand" href="index.html"><img src="images/cellulose-logo-no-text.png">
+      <a class="w-nav-brand" href="index.html"><img class="image-2" src="images/cellulose-logo-no-text.png">
       </a>
       <nav class="w-nav-menu" role="navigation"><a class="main-nav-mobile nav-links w-nav-link" href="#getting-started">Getting Started</a><a class="main-nav-mobile nav-links w-nav-link" href="#installation-section">Installation</a><a class="main-nav-mobile nav-links w-nav-link" href="#usage-section">Usage</a><a class="main-nav-mobile nav-links w-nav-link" href="https://github.com/CodingZeal/cellulose">Github</a>
       </nav>
@@ -35,12 +35,7 @@
   <div class="hero-section" data-ix="page-load-a">
     <div class="container-2 w-container">
       <h1 class="hero-heading" data-ix="cellulose-heading-on-load">Cellulose</h1>
-      <div class="hero-sub-heading w-hidden-medium w-hidden-small w-hidden-tiny" data-ix="cellulose-installation-on-scroll">A CONTEXTUALLY AWARE GRID FOR REACT</div>
-      <div class="hero-sub-heading w-hidden-main w-hidden-tiny" data-ix="cellulose-installation-on-scroll">A CONTEXTUALLY AWARE
-        <br>
-        <br> GRID FOR REACT</div>
-      <div class="hero-sub-heading w-hidden-main w-hidden-medium w-hidden-small" data-ix="cellulose-installation-on-scroll">A CONTEXTUALLY
-        <br>AWARE GRID FOR REACT</div>
+      <div class="hero-sub-heading" data-ix="cellulose-installation-on-scroll">A CONTEXTUALLY AWARE GRID FOR REACT</div>
     </div>
   </div>
   <div class="main-section">
@@ -75,8 +70,25 @@
             <h1 class="heading-3">Getting Started</h1>
             <p class="getting-started-type"><span class="div-containers">&lt;</span><span class="cellulose">Cellulose</span><span class="div-containers">&gt;</span> will render into the DOM as a <span class="div-containers">&lt;</span><span class="cellulose">div</span><span class="div-containers">&gt;</span> whose class is defined by the breakPoints object and the width the component exceeds.</p>
           </div>
-          <div class="w-col w-col-6" data-ix="installation-scroll-animation">
-            <div class="sections-code-bg">
+          <div class="w-col w-col-6">
+            <div class="sections-code-bg w-hidden-small w-hidden-tiny" data-ix="installation-scroll-animation">
+              <div class="html-embed w-embed"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">import</span> <span style="color: #f8f8f2">{</span> <span style="color: #a6e22e">Cellulose</span> <span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;cellulose&#39;</span>
+<span style="color: #66d9ef">import</span> <span style="color: #a6e22e">React</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;react&#39;</span>
+<span style="color: #66d9ef">export</span> <span style="color: #66d9ef">function</span> <span style="color: #a6e22e">MyComponent</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #66d9ef">const</span> <span style="color: #a6e22e">breakPoints</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span>  <span style="color: #e6db74">&#39;greater-than-768&#39;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;greater-than-1024&#39;</span>
+  <span style="color: #f8f8f2">}</span>
+  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">(</span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cellulose</span> <span style="color: #a6e22e">breakPoints</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #e6db74">breakPoints</span><span style="color: #f8f8f2">}</span><span style="color: #f92672">&gt;</span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #fff">Content</span><span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cellulose<span style="color: #f92672">&gt;</span></span>
+  <span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">}</span>
+</pre>
+              </div>
+            </div>
+            <div class="sections-code-bg w-hidden-main w-hidden-medium">
               <div class="html-embed w-embed"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">import</span> <span style="color: #f8f8f2">{</span> <span style="color: #a6e22e">Cellulose</span> <span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;cellulose&#39;</span>
 <span style="color: #66d9ef">import</span> <span style="color: #a6e22e">React</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;react&#39;</span>
 <span style="color: #66d9ef">export</span> <span style="color: #66d9ef">function</span> <span style="color: #a6e22e">MyComponent</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
@@ -105,7 +117,13 @@
         <div class="w-row">
           <div class="installation-section-column w-col w-col-6">
             <h1 class="installation-section-subheading">Npm</h1>
-            <div class="installation sections-code-bg" data-ix="cellulose-installation-on-scroll">
+            <div class="installation sections-code-bg w-hidden-small w-hidden-tiny" data-ix="cellulose-installation-on-scroll">
+              <div class="installation-section-code w-embed"><span>
+npm i -S cellulose<br>
+</span>
+              </div>
+            </div>
+            <div class="installation sections-code-bg w-hidden-main w-hidden-medium">
               <div class="installation-section-code w-embed"><span>
 npm i -S cellulose<br>
 </span>
@@ -114,7 +132,16 @@ npm i -S cellulose<br>
           </div>
           <div class="installation-section-column w-col w-col-6">
             <h1 class="installation-section-subheading">Yarn</h1>
-            <div class="installation sections-code-bg" data-ix="cellulose-installation-on-scroll">
+            <div class="installation sections-code-bg w-hidden-small w-hidden-tiny" data-ix="cellulose-installation-on-scroll">
+              <div class="installation-section-code w-embed"><span>
+yarn add cellulose
+</span>
+                <style>
+                  "color:white;"
+                </style>
+              </div>
+            </div>
+            <div class="installation sections-code-bg w-hidden-main w-hidden-medium">
               <div class="installation-section-code w-embed"><span>
 yarn add cellulose
 </span>
@@ -136,8 +163,8 @@ yarn add cellulose
             <h1 class="heading-3">Usage</h1>
             <p class="getting-started-type">Cellulose can also be used to create a responsive grid. Use the columns property of&nbsp;&nbsp;<span class="div-containers">&lt;</span><span class="cellulose">Cellulose</span><span class="div-containers">&gt;</span> to define the number of columns to use, then add <span class="div-containers">&lt;</span><span class="cellulose">Cell</span><span class="div-containers">&gt;</span> components with spanOptions props that define responsive behavior</p>
           </div>
-          <div class="w-col w-col-6" data-ix="installation-scroll-animation">
-            <div class="sections-code-bg">
+          <div class="w-col w-col-6">
+            <div class="sections-code-bg w-hidden-small w-hidden-tiny" data-ix="installation-scroll-animation">
               <div class="html-embed-2 w-embed"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">import</span> <span style="color: #f8f8f2">{</span> <span style="color: #a6e22e">Cellulose</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">Cell</span> <span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;cellulose&#39;</span>
 <span style="color: #66d9ef">import</span> <span style="color: #a6e22e">React</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;react&#39;</span>
 <span style="color: #66d9ef">export</span> <span style="color: #66d9ef">function</span> <span style="color: #a6e22e">MyComponent</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
@@ -158,6 +185,28 @@ yarn add cellulose
 <span style="color: #f8f8f2">}</span>
 </span></span></pre>
               </div>
+            </div>
+          </div>
+          <div class="sections-code-bg w-hidden-main w-hidden-medium">
+            <div class="html-embed-2 w-embed"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">import</span> <span style="color: #f8f8f2">{</span> <span style="color: #a6e22e">Cellulose</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">Cell</span> <span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;cellulose&#39;</span>
+<span style="color: #66d9ef">import</span> <span style="color: #a6e22e">React</span> <span style="color: #a6e22e">from</span> <span style="color: #e6db74">&#39;react&#39;</span>
+<span style="color: #66d9ef">export</span> <span style="color: #66d9ef">function</span> <span style="color: #a6e22e">MyComponent</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #66d9ef">const</span> <span style="color: #a6e22e">breakPoints</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span>  <span style="color: #e6db74">&#39;greater-than-768&#39;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;greater-than-1024&#39;</span>
+  <span style="color: #f8f8f2">}</span>
+  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">(</span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cellulose</span> <span style="color: #a6e22e">columns</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #ae81ff">12</span><span style="color: #f8f8f2">}</span> <span style="color: #a6e22e">breakPoints</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{</span><span style="color: #a6e22e">breakPoints</span><span style="color: #f8f8f2">}</span><span style="color: #f92672">&gt;</span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">8</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">One<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">Cell</span> <span style="color: #a6e22e">spanOptions</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">{{</span> <span style="color: #ae81ff">768</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1024</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">4</span> <span style="color: #f8f8f2">}}</span><span style="color: #f92672">&gt;</span>
+        <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">div</span><span style="color: #f92672">&gt;</span><span style="color: #a6e22e">Two<span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/div<span style="color: #f92672">&gt;</span></span>
+      <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cell<span style="color: #f92672">&gt;</span></span>
+    <span style="color: #f92672">&lt;</span><span style="color: #a6e22e">/Cellulose<span style="color: #f92672">&gt;</span></span>
+  <span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">}</span>
+</span></span></pre>
             </div>
           </div>
         </div>
