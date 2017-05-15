@@ -350,8 +350,8 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
     background-image: linear-gradient(180deg, #61dafb, #61dafb);
   }
   .hero-sub-heading {
-    margin-left:15px;
     width: 90%;
+    margin-left: 15px;
     font-size: 30px;
     line-height: 35px;
   }
