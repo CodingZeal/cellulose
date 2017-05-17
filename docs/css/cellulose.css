@@ -153,7 +153,6 @@
 }
 
 .getting-started-type {
-  width: 310px;
   margin-top: 20px;
   color: #585858;
 }
@@ -322,9 +321,20 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
   transform: translate(0px, 20px);
 }
 
+@media (max-width: 991px) {
+  .hero-sub-heading {
+    padding-right: 10%;
+    padding-left: 10%;
+    line-height: 1em;
+  }
+}
+
 @media (max-width: 767px) {
   .hero-sub-heading {
     padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 40px;
   }
   .heading-3 {
     text-align: center;
@@ -338,6 +348,10 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
 }
 
 @media (max-width: 479px) {
+  .hero-section {
+    height: 300px;
+    padding-top: 100px;
+  }
   .nav-links.main-nav-mobile {
     background-image: -webkit-linear-gradient(270deg, #2f4858, #2f4858);
     background-image: linear-gradient(180deg, #2f4858, #2f4858);
@@ -349,16 +363,57 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
     background-image: -webkit-linear-gradient(270deg, #61dafb, #61dafb);
     background-image: linear-gradient(180deg, #61dafb, #61dafb);
   }
+  .hero-heading {
+    font-size: 50px;
+  }
   .hero-sub-heading {
     width: 90%;
+    margin-left: 15px;
+    padding-top: 0px;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+
   }
   .heading-3 {
     text-align: center;
   }
   .getting-started-type {
+    font-size: 13px;
     text-align: center;
   }
   .installation-section-type {
     text-align: center;
+  }
+  .sections-code-bg {
+    width: 100%;
+  }
+  .sections-code-bg.installation {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .html-embed {
+    font-size: 10px;
+
+  }
+  .installation-section-subheading {
+    font-size: 25px;
+    line-height: 1em;
+    text-align: center;
+
+  }
+  .sections-code-bg.usage-section{
+    margin-top: 40px;
+  }
+  .html-embed-2 {
+    font-size: 10px;
+  }
+  .image-2 {
+    width: 75%;
+    min-width: 55px;
   }
 }
