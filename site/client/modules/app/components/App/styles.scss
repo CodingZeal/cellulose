@@ -1,3 +1,22 @@
+@import './colors';
+
 .root {
   padding-top: 80px;
+}
+
+h1 {
+  color: $dark-blue;
+}
+
+h2 {
+  color: $light-blue;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: $light-blue;
+}
+
+.tag {
+  color: $pink;
 }

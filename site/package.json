@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cellulose": "^0.2.3",
     "history": "^4.4.1",
     "normalize.css": "^5.0.0",
     "react": "^15.4.1",
