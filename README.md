@@ -18,7 +18,7 @@ Use the `<Cellulose>` component to define a container that you want to style bas
 
 `<Cellulose>` will render into the DOM as a `<div>` whose class is determined by which breakPoint in `breakPoints` its own width exceeds.
 
-```
+```jsx
 import { Cellulose } from 'cellulose'
 import React from 'react'
 
@@ -38,7 +38,7 @@ export function MyComponent() {
 
 Cellulose can also be used to create a responsive grid. Use the prop `columns=` of `<Cellulose>` to define the number of columns to use, then add `<Cell>` components with `spanOptions` props that define responsive behavior
 
-```
+```jsx
 import { Cellulose, Cell } from 'cellulose'
 import React from 'react'
 
@@ -63,7 +63,7 @@ export function MyComponent() {
 
 Cellulose's `<Cell>` components can even configure their own classes based on which `breakPoints` are activated!
 
-```
+```jsx
 import { Cellulose, Cell } from 'cellulose'
 import React from 'react'
 
