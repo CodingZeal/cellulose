@@ -549,6 +549,7 @@ textarea.w-select {
     margin-right: 0;
   }
   .w-col {
+    float: none;
     width: 100%;
     left: auto;
     right: auto;
