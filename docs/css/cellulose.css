@@ -1,13 +1,21 @@
 .nav-bar {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  padding: 9px 0px;
+  z-index: 1;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
   background-color: rgba(238, 245, 250, .87);
 }
 
+.nav-bar.fixed-nav {
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+
 .hero-section {
+  position: static;
+  z-index: 1;
   height: 400px;
   padding-top: 140px;
   background-image: url('../images/cellulose-header-background.png');
@@ -276,6 +284,74 @@
   color: #c3c3c3;
 }
 
+.topbar {
+  position: relative;
+  z-index: 100;
+  display: block;
+  background-color: #363636;
+}
+
+.nav-bar-container {
+  position: static;
+  z-index: 0;
+}
+
+.topbar-project-links {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.topbar-text {
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  float: right;
+  color: #959595;
+  text-align: left;
+}
+
+.topbar-link {
+  display: inline;
+  color: #fff;
+  text-decoration: none;
+}
+
+.topbar-project {
+  padding: 8px 15px;
+}
+
+.topbar-project:hover {
+  background-color: #292929;
+}
+
+.topbar-project.current {
+  background-color: #4d4d4d;
+  color: rgba(51, 51, 51, .98);
+}
+
+.topbar-project-name {
+  display: inline-block;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.topbar-project-logo {
+  width: auto;
+  height: 34px;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: rgba(238, 245, 250, .87);
+}
+
 html.w-mod-js *[data-ix="nav-bar-on-load-animation"] {
   display: block;
   opacity: 0;
@@ -345,12 +421,15 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
   .image {
     text-align: center;
   }
+  .topbar-text {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 479px) {
   .hero-section {
     height: 300px;
-    padding-top: 100px;
+    padding-top: 70px;
   }
   .nav-links.main-nav-mobile {
     background-image: -webkit-linear-gradient(270deg, #2f4858, #2f4858);
@@ -375,9 +454,6 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
     font-size: 20px;
     line-height: 25px;
     text-align: center;
-    font-size: 30px;
-    line-height: 35px;
-
   }
   .heading-3 {
     text-align: center;
@@ -398,16 +474,19 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
   }
   .html-embed {
     font-size: 10px;
-
   }
   .installation-section-subheading {
     font-size: 25px;
     line-height: 1em;
     text-align: center;
-
   }
-  .sections-code-bg.usage-section{
-    margin-top: 40px;
+  .footer-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .footer-type {
+    margin-top: 20px;
+    padding-bottom: 20px;
   }
   .html-embed-2 {
     font-size: 10px;
@@ -415,5 +494,16 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
   .image-2 {
     width: 75%;
     min-width: 55px;
+  }
+  .topbar-project-links {
+    padding-left: 0px;
+  }
+  .topbar-text {
+    position: relative;
+    width: 100%;
+    padding-top: 0px;
+    padding-right: 0px;
+    font-size: 14px;
+    text-align: center;
   }
 }
