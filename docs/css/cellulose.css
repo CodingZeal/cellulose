@@ -3,7 +3,7 @@
   display: block;
   padding-top: 9px;
   padding-bottom: 9px;
-  background-color: rgba(238, 245, 250, .87);
+  background-color: #eef5fa;
 }
 
 .nav-bar.fixed-nav {
@@ -349,7 +349,7 @@
   display: none;
   padding-top: 9px;
   padding-bottom: 9px;
-  background-color: rgba(238, 245, 250, .87);
+  background-color: #eef5fa;
 }
 
 html.w-mod-js *[data-ix="nav-bar-on-load-animation"] {
