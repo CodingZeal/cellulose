@@ -1,15 +1,9 @@
 @import '../colors';
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  padding: 9px;
+  padding: 9px 0px;
   width: 100%;
   height: 72px;
-
-  z-index: 1000;
 
   background-color: $background-light-blue;
 }

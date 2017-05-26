@@ -3,6 +3,7 @@ import { Cell, Cellulose } from 'cellulose'
 
 import styles from './styles.scss'
 import Features from './Features'
+import SiteHeader from './SiteHeader'
 import Header from './Header'
 import Hero from './Hero'
 
@@ -13,6 +14,7 @@ export default function App({ store }) {
   }
   return (
     <div className={styles.root}>
+      <SiteHeader />
       <Header />
       <Hero />
       <Features />
@@ -21,7 +23,8 @@ export default function App({ store }) {
           <h3>Getting Started</h3>
           <p>
             <span className={styles.tag}>
-              &lt;</span>
+              &lt;
+            </span>
             <strong>Cellulose</strong>
             <span className={styles.tag}>
               &gt;
@@ -58,14 +61,16 @@ export default function App({ store }) {
             Cellulose can also be used to create a responsive grid. Use the
             columns property of
             <span className={styles.tag}>
-              &lt;</span>
+              &lt;
+            </span>
             <strong>Cellulose</strong>
             <span className={styles.tag}>
               &gt;
             </span>
             to define the number of columns to use, then add
             <span className={styles.tag}>
-              &lt;</span>
+              &lt;
+            </span>
             <strong>Cell</strong>
             <span className={styles.tag}>
               &gt;
