@@ -1,8 +1,9 @@
 @import '../colors';
 
 .container {
+  width: 100%;
   background-color: $dark-grey;
-  display: flex;
+  display: none;
 
   a {
     color: $white;
@@ -17,8 +18,13 @@
   }
 }
 
+.containerShown .container {
+  display: flex;
+}
+
 .linkList {
   margin: 0;
+  padding-left: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
