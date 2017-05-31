@@ -426,7 +426,7 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 565px) {
   .hero-section {
     height: 300px;
     padding-top: 70px;
@@ -495,7 +495,7 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
     width: 75%;
     min-width: 55px;
   }
-  .topbar {
+  .topbar{
     text-align: center;
   }
   .topbar-project-links {
