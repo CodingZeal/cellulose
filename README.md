@@ -1,12 +1,14 @@
-[![GitHub issues](https://img.shields.io/github/issues/bmatto/cellulose.svg)](https://github.com/bmatto/cellulose/issues)
-[![CircleCI](https://img.shields.io/circleci/project/github/bmatto/cellulose.svg)]()
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/bmatto/cellulose/master/LICENSE)
+![Alt text](docs/images/cellulose-logo.png)
 
 # Cellulose
 
 Cellulose is a React layout library that allows you to create contextually aware components using flexbox.
 
 The `<Cellulose>` component uses its own rendered width to assign style and responsive behavior, rather than the width of the browser window.
+
+[![GitHub issues](https://img.shields.io/github/issues/bmatto/cellulose.svg)](https://github.com/bmatto/cellulose/issues)
+[![CircleCI](https://img.shields.io/circleci/project/github/bmatto/cellulose.svg)]()
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/bmatto/cellulose/master/LICENSE)
 
 ## Installation
 
