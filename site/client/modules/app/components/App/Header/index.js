@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import styles from './styles.scss'
-import logo from './cellulose-logo.png'
+import styles from "./styles.scss";
+import logo from "./cellulose-logo.png";
 
-export default function Header(props) {
+export default function Header() {
   return (
     <section className={styles.header}>
       <div>
@@ -19,5 +19,5 @@ export default function Header(props) {
         <a href="https://github.com/CodingZeal/cellulose">Github</a>
       </nav>
     </section>
-  )
+  );
 }

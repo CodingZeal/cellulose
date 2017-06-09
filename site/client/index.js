@@ -1,31 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
-import { Provider } from 'react-redux'
-import 'normalize.css'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import "normalize.css";
 
-import App from './modules/app/components/App'
-import { configureStore } from './base'
+import App from "./modules/app/components/App";
 
-const rootEl = document.getElementById('root')
-const store = configureStore()
+const rootEl = document.getElementById("root");
 
-ReactDOM.render(<Root currentApp={App} />, rootEl)
+ReactDOM.render(<Root currentApp={App} />, rootEl);
 
 function Root({ currentApp }) {
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        {React.createElement(currentApp)}
-      </BrowserRouter>
-    </Provider>
-  )
+    <BrowserRouter>
+      {React.createElement(currentApp)}
+    </BrowserRouter>
+  );
 }
 
 if (module.hot) {
-  module.hot.accept('./modules/app/components/App', () => {
-    const NextApp = require('./modules/app/components/App').default
+  module.hot.accept("./modules/app/components/App", () => {
+    // eslint-disable-next-line global-require
+    const NextApp = require("./modules/app/components/App").default;
 
-    ReactDOM.render(<Root currentApp={NextApp} />, rootEl)
-  })
+    ReactDOM.render(<Root currentApp={NextApp} />, rootEl);
+  });
 }

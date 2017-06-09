@@ -1,17 +1,18 @@
-import React from 'react'
-import { Cell, Cellulose } from 'cellulose'
+import React from "react";
+import { Cell, Cellulose } from "cellulose";
 
-import styles from './styles.scss'
-import Features from './Features'
-import SiteHeader from './SiteHeader'
-import Header from './Header'
-import Hero from './Hero'
+import styles from "./styles.scss";
+import Features from "./Features";
+import SiteHeader from "./SiteHeader";
+import Header from "./Header";
+import Hero from "./Hero";
 
-export default function App({ store }) {
+export default function App() {
   const breakPoints = {
-    0: 'greater-than-0',
-    480: 'greater-than-480'
-  }
+    0: "greater-than-0",
+    480: "greater-than-480"
+  };
+
   return (
     <div className={styles.root}>
       <SiteHeader />
@@ -83,5 +84,5 @@ export default function App({ store }) {
         </Cell>
       </Cellulose>
     </div>
-  )
+  );
 }
