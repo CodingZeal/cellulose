@@ -461,6 +461,7 @@ html.w-mod-js *[data-ix="cellulose-installation-on-scroll"] {
   .getting-started-type {
     font-size: 13px;
     text-align: center;
+    padding-bottom: 20px;
   }
   .installation-section-type {
     text-align: center;
