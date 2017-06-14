@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "zeal",
+    "zeal/react",
+    "prettier",
+    "prettier/react"
+  ],
+  "root": true,
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": {
+          "resolve": {
+            "root": "./client"
+          }
+        }
+      }
+    }
+  }
+}

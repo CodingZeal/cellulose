@@ -1,15 +1,15 @@
-import { Cellulose, Cell } from 'cellulose'
-import React from 'react'
+import { Cellulose } from "cellulose";
+import React from "react";
 
-import celluloseLogo from '../Header/cellulose-logo.png'
-import reactgenLogo from './react-gen-logo.png'
-import styles from './styles.scss'
+import celluloseLogo from "../Header/cellulose-logo.png";
+import reactgenLogo from "./react-gen-logo.png";
+import styles from "./styles.scss";
 
 const breakPoints = {
   480: `${styles.containerShown}`
-}
+};
 
-export default function SiteHeader(props) {
+export default function SiteHeader() {
   return (
     <Cellulose breakPoints={breakPoints}>
       <div className={styles.container}>
@@ -31,10 +31,10 @@ export default function SiteHeader(props) {
         </div>
         <div className={styles.sideCredit}>
           Maintained by the development team at
-          {' '}
+          {" "}
           <a href="https://codingzeal.com">Zeal</a>
         </div>
       </div>
     </Cellulose>
-  )
+  );
 }
