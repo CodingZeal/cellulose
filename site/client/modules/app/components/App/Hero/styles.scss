@@ -1,0 +1,37 @@
+@import '../colors';
+
+.heroSection {
+  background-image: url('../Hero/cellulose-header-background.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: repeat;
+
+  padding-top: 140px;
+  padding-bottom: 100px;
+  width: 100%;
+
+  h1 {
+    margin: 0;
+
+    color: $dark-blue;
+    text-align: center;
+    font-size: 7rem;
+  }
+
+  h2 {
+    margin: 0;
+
+    color: $light-blue;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.fullHeader {
+  display: block;
+  
+  h2 {
+    font-size: 4.5rem;
+  }
+}
