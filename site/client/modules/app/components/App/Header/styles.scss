@@ -1,14 +1,41 @@
 @import '../colors';
 
+.headerContainer {
+  width: 100%;
+  background-color: $background-light-blue;
+}
+
 .header {
   padding: 9px 0px;
+  margin: 0 auto;
   width: 100%;
+  max-width: 940px;
   height: 72px;
 
-  background-color: $background-light-blue;
+  display: flex;
+  flex-direction: row;
 }
 
 .logo {
   width: 72px;
   height: 72px;
+}
+
+.navLinksFull {
+  margin-left: auto;
+  display: flex;
+
+  a {
+    display: block;
+    padding: 20px;
+    transition: color 500ms ease;
+    color: $links-grey;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $active-link-blue;
+    }
+  }
 }
