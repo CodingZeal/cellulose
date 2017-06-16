@@ -1,0 +1,26 @@
+@import '../colors';
+
+.featuresContainer {
+  background-color: $dark-blue;
+  padding: 70px 0;
+}
+
+.features {
+  margin: 0 auto;
+  max-width: 960px;
+
+  color: $features-grey;
+  text-align: center;
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  p {
+    padding: 0 30px;
+  }
+}
+
+.featureImage {
+  height: 99px;
+}
