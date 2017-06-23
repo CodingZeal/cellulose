@@ -1,0 +1,18 @@
+@import '../colors';
+
+.footerContainer {
+  background-color: $background-dark-blue;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.footer {
+  color: $footer-grey;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+
+  .link {
+    color: $footer-grey;
+  }
+}

@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./styles.scss";
 
 import Features from "./Features";
+import Footer from "./Footer";
 import GettingStarted from "./GettingStarted";
 import Header from "./Header";
 import Hero from "./Hero";
@@ -20,6 +21,7 @@ export default function App() {
       <GettingStarted />
       <Installation />
       <Usage />
+      <Footer />
     </div>
   );
 }
