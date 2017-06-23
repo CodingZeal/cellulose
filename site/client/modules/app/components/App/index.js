@@ -2,10 +2,12 @@ import React from "react";
 import { Cell, Cellulose } from "cellulose";
 
 import styles from "./styles.scss";
+
 import Features from "./Features";
-import SiteHeader from "./SiteHeader";
+import GettingStarted from "./GettingStarted";
 import Header from "./Header";
 import Hero from "./Hero";
+import SiteHeader from "./SiteHeader";
 
 export default function App() {
   const breakPoints = {
@@ -19,33 +21,7 @@ export default function App() {
       <Header />
       <Hero />
       <Features />
-      <Cellulose columns={2} breakPoints={breakPoints}>
-        <Cell spanOptions={{ 0: 2, 480: 1 }}>
-          <h3>Getting Started</h3>
-          <p>
-            <span className={styles.tag}>
-              &lt;
-            </span>
-            <strong>Cellulose</strong>
-            <span className={styles.tag}>
-              &gt;
-            </span>
-            &nbsp;will render into the DOM as a&nbsp;
-            <span className={styles.tag}>
-              &lt;
-            </span>
-            <strong>div</strong>
-            <span className={styles.tag}>
-              &gt;
-            </span>
-            &nbsp;whose class is defined by the breakPoints object and the
-            width the component exceeds.
-          </p>
-        </Cell>
-        <Cell spanOptions={{ 0: 2, 480: 1 }}>
-          <pre>CodeBlock</pre>
-        </Cell>
-      </Cellulose>
+      <GettingStarted />
       <Cellulose columns={2} breakPoints={breakPoints}>
         <Cell spanOptions={{ 0: 2, 480: 1 }}>
           <h3>Installation</h3>
