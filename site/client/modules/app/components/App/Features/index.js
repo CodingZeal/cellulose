@@ -6,7 +6,7 @@ import breakpointsIcon from "./feature-icon-breakpoints.png";
 import granularIcon from "./feature-icon-granular.png";
 import mqIcon from "./feature-icon-mq.png";
 
-export default function Header() {
+export default function Features() {
   const breakPoints = {
     0: "greater-than-0",
     480: "greater-than-480"
