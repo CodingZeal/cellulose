@@ -7,6 +7,7 @@ import Features from "./Features";
 import GettingStarted from "./GettingStarted";
 import Header from "./Header";
 import Hero from "./Hero";
+import Installation from "./Installation";
 import SiteHeader from "./SiteHeader";
 
 export default function App() {
@@ -22,15 +23,7 @@ export default function App() {
       <Hero />
       <Features />
       <GettingStarted />
-      <Cellulose columns={2} breakPoints={breakPoints}>
-        <Cell spanOptions={{ 0: 2, 480: 1 }}>
-          <h3>Installation</h3>
-          <h4>Npm</h4>
-        </Cell>
-        <Cell spanOptions={{ 0: 2, 480: 1 }}>
-          <h4>Yarn</h4>
-        </Cell>
-      </Cellulose>
+      <Installation />
       <Cellulose columns={2} breakPoints={breakPoints}>
         <Cell spanOptions={{ 0: 2, 480: 1 }}>
           <h3>Usage</h3>
