@@ -10,6 +10,7 @@ export default function Footer() {
         &nbsp;
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://github.com/CodingZeal/cellulose"
           className={styles.link}
         >
