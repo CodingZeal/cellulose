@@ -1,12 +1,19 @@
 import React from "react";
 import { Cell, Cellulose } from "cellulose";
+import classnames from "classnames";
 
+import animations from "../animation.scss";
 import styles from "./styles.scss";
 
 const breakPoints = {
   0: "greater-than-0",
   480: "greater-than-480"
 };
+const animatedClass = classnames(
+  "prettyprint",
+  animations.animated,
+  animations.fadeInRight
+);
 
 export default function Usage() {
   return (
@@ -37,7 +44,7 @@ export default function Usage() {
             </p>
           </Cell>
           <Cell spanOptions={{ 0: 2, 480: 1 }}>
-            <pre className="prettyprint">
+            <pre className={animatedClass}>
               {`import { Cellulose, Cell } from 'cellulose'
 import React from 'react'
 export function MyComponent() {
