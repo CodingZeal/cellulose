@@ -1,5 +1,6 @@
 import React from "react";
 import { Cell, Cellulose } from "cellulose";
+import classnames from "classnames";
 
 import styles from "./styles.scss";
 
@@ -7,8 +8,7 @@ const breakPoints = {
   0: "greater-than-0",
   480: "greater-than-480"
 };
-
-const snippetClass = `prettyprint lang-bsh ${styles.snippet}`;
+const snippetClass = classnames("prettyprint", "lang-bsh", styles.snippet);
 
 export default function Installation() {
   return (
