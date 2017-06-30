@@ -3,12 +3,14 @@ import { Cell, Cellulose } from "cellulose";
 
 import styles from "./styles.scss";
 
-export default function Installation() {
-  const breakPoints = {
-    0: "greater-than-0",
-    480: "greater-than-480"
-  };
+const breakPoints = {
+  0: "greater-than-0",
+  480: "greater-than-480"
+};
 
+const snippetClass = `prettyprint lang-bsh ${styles.snippet}`;
+
+export default function Installation() {
   return (
     <section className={styles.installationContainer}>
       <div className={styles.installation}>
@@ -16,13 +18,13 @@ export default function Installation() {
         <Cellulose columns={2} breakPoints={breakPoints}>
           <Cell spanOptions={{ 0: 2, 480: 1 }}>
             <h4>Npm</h4>
-            <pre className="prettyprint lang-bsh">
+            <pre className={snippetClass}>
               npm i -S cellulose
             </pre>
           </Cell>
           <Cell spanOptions={{ 0: 2, 480: 1 }}>
             <h4>Yarn</h4>
-            <pre className="prettyprint lang-bsh">
+            <pre className={snippetClass}>
               yarn add cellulose
             </pre>
           </Cell>
