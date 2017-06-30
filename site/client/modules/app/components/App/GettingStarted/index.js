@@ -3,12 +3,12 @@ import { Cell, Cellulose } from "cellulose";
 
 import styles from "./styles.scss";
 
-export default function GettingStarted() {
-  const breakPoints = {
-    0: "greater-than-0",
-    480: "greater-than-480"
-  };
+const breakPoints = {
+  0: "greater-than-0",
+  480: "greater-than-480"
+};
 
+export default function GettingStarted() {
   return (
     <section className={styles.gettingStartedContainer}>
       <div className={styles.gettingStarted}>
