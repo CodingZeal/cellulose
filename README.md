@@ -1,3 +1,11 @@
+# `DEPRECATED`
+
+## End of Life
+
+Cellulose was created as an experiment in layouts that was never fully realized. With evolving conventions in CSS, we are choosing to deprecate this project, as we no longer feel that it is the right solution for layout problems.
+
+---
+
 ![Alt text](docs/images/cellulose-logo.png)
 
 # Cellulose
